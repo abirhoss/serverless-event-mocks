@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name='serverless-event-mocks',
     packages=['serverless_event_mocks'],
-    version='0.0.5',
+    version='0.0.6',
     license='MIT',
     description='A small Python library that includes details mocks of AWS Lambda event sources.',
     long_description=long_description,
@@ -14,7 +14,7 @@ setuptools.setup(
     author='Abir Hossain',
     author_email='abirz.pro@gmail.com',
     url='https://github.com/abirhoss/serverless-event-mocks',
-    download_url='https://github.com/abirhoss/serverless-event-mocks/archive/v0.0.5.tar.gz',
+    download_url='https://github.com/abirhoss/serverless-event-mocks/archive/v0.0.6.tar.gz',
     keywords=['serverless', 'serverless-framework', 'unittest', 'mock', 'events', 'aws-lambda'],
     classifiers=[
         "Development Status :: 4 - Beta",
