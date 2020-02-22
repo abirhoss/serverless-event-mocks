@@ -14,10 +14,10 @@ setuptools.setup(
     author='Abir Hossain',
     author_email='abirz.pro@gmail.com',
     url='https://github.com/abirhoss/serverless-event-mocks',
-    download_url = 'https://github.com/abirhoss/serverless-event-mocks/archive/v0.0.4.tar.gz',
-    keywords = ['serverless', 'serverless-framework', 'unittest', 'mock', 'events', 'aws-lambda'],
+    download_url='https://github.com/abirhoss/serverless-event-mocks/archive/v0.0.4.tar.gz',
+    keywords=['serverless', 'serverless-framework', 'unittest', 'mock', 'events', 'aws-lambda'],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",

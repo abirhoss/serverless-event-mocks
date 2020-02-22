@@ -19,8 +19,8 @@ def create_event(provider: str, event_type: str, event_payload: dict) -> dict:
         raise KeyError(f"Invalid event_type '{event_type}'. Valid event types: {VALID_EVENT_TYPES}")
 
     # Validate event payload
-    if not isinstance(event_payload, dict):
-        raise TypeError(f"Invalid event_payload type. Must be of type 'dict', '{type(event_payload)}' given")
+    if not _validate_event_payload(event_payload):
+        raise TypeError(f"Invalid event_payload type. Must be of '{dict}', '{type(event_payload)}' given")
 
     # Load event template
     event_template = _load_event_template(provider, event_type)
@@ -43,3 +43,7 @@ def _validate_provider(provider: str) -> bool:
 
 def _validate_event_type(event_type: str) -> bool:
     return event_type in VALID_EVENT_TYPES
+
+
+def _validate_event_payload(event_payload: dict) -> bool:
+    return isinstance(event_payload, dict)
