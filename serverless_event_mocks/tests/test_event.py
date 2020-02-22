@@ -1,5 +1,5 @@
 from unittest import TestCase
-from event_mocks_python.event import create_event
+from serverless_event_mocks.event import create_event
 
 
 class TestEvent(TestCase):
