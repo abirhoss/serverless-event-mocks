@@ -9,15 +9,12 @@ class TestEvent(TestCase):
         # Arrange
         provider = 'aws'
         event_type = 'api_gateway'
-        event_payload = {
-           "body": {
-              "first_name": "Sam",
-              "last_name": "Smith"
-           }
-        }
+        event_payload = 'fuck'
 
         # Act
         event = create_event(provider, event_type, event_payload)
+
+        print(event)
 
         # Assert
         self.assertTrue(isinstance(event, dict))

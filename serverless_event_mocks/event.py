@@ -12,11 +12,15 @@ def create_event(provider: str, event_type: str, event_payload: dict) -> dict:
 
     # Validate provider
     if not _validate_provider(provider):
-        raise Exception(f"Invalid provider '{provider}'. Valid providers: {VALID_PROVIDERS}")
+        raise KeyError(f"Invalid provider '{provider}'. Valid providers: {VALID_PROVIDERS}")
 
     # Validate event type
     if not _validate_event_type(event_type):
-        raise Exception(f"Invalid event type '{event_type}'. Valid event types: {VALID_EVENT_TYPES}")
+        raise KeyError(f"Invalid event_type '{event_type}'. Valid event types: {VALID_EVENT_TYPES}")
+
+    # Validate event payload
+    if not isinstance(event_payload, dict):
+        raise TypeError(f"Invalid event_payload type. Must be of type 'dict', '{type(event_payload)}' given")
 
     # Load event template
     event_template = _load_event_template(provider, event_type)
