@@ -9,15 +9,17 @@ This library simply uses default event source mock templates and merges them wit
 
 ---
 
-## Quick Start
-
-Install Event Mocks Python using:
+## Quick Start - Install via `pip`
 
 ```bash
 pip install serverless-event-mocks
 ```
 
-Import and use the `create_event` function into any Python code using
+## Usage
+
+---
+
+### API Gateway
 
 ```python
 from serverless_event_mocks import create_event
