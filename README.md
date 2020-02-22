@@ -1,5 +1,5 @@
 # Event Mocks Python
-A small Python library that includes details mocks of Serverless function events. Useful when unit testing your Serverless functions.
+A small Python library that includes detail mocks of Serverless function events. Useful when unit testing your Serverless functions.
 
 Supported Providers and Event Types:
 - [x] AWS: `aws`
