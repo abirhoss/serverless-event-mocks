@@ -42,6 +42,6 @@ event = create_event(provider, event_type, event_payload)
 # Run unit tests
 make test
 
-# Run linter
+# Run Flake8 linter
 make lint
 ```
