@@ -3,7 +3,7 @@ A small Python library that includes detail mocks of Serverless function events.
 
 Supported Providers and Event Types:
 - AWS:  `aws`
-    - API Gateway:  `api-gateway`
+    - API Gateway:  `api_gateway`
 
 This library simply uses default event source mock templates and merges them with any overwrite you provide. [Check out the JSON template files](serverless_event_mocks/event_templates/aws) to learn more about the data structure of each event source.
 
